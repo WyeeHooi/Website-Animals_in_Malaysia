@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title> Fancy Animals | Feedback Form</title>
+		<link rel="icon" href="images/logo icon.png" type="image/icon">
+        <link rel="stylesheet" href="css-header-navi-footer.css">
+
+        <style type="text/css">            
+            #main{
+                clear:left;					
+                font-family:'Times New Roman', Times, serif;
+                font-size: 1em;
+                margin-top:3em;margin-bottom: 100px;
+                margin-left:3em;margin-right:3em;
+                max-width: 100%;
+            }
+            #main .text-box h1{
+                color: #7f572f;               
+                font-family:rockwell;
+                padding: 0;
+                box-sizing: border-box;
+                margin-bottom: 0;
+            }
+            #main .text-box p{
+                width: 60%;
+                padding: 0;
+                box-sizing: border-box;
+                margin-top: 0;                
+            }
+            #main .text-box{
+                margin-bottom: 5%;
+            }
+            #main .form-box h4{
+                margin-bottom: 0;
+            }
+            #main .input-box{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 1px;
+            }
+            #main .form-box .credential{
+                margin-top: 5%;                
+            }
+            #main .form-box .credential h4{
+                margin-bottom: 2%;
+            }
+            #main .button{                
+                text-align: center;
+            }
+            .button{
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            span{
+                color: crimson;
+                text-decoration: none;
+                font-size: small;
+            }
+            .our-video{
+                padding: 0;
+                width: 70%;
+                height: max-content;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                margin-top: 0%;
+            }
+            iframe{
+                padding: 0;
+                margin-left: auto;
+                margin-right: auto;
+                border: none;
+                margin-top: 0%;
+                margin-bottom: 2%;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="header">
+			<header>
+				<a href="FancyAnimals.html"><img src="images/header.png" alt="Fancy Animals logo" style="max-width:100%"></a>
+			</header>			
+		</div>
+		
+		<div id="nav">
+			<nav>
+				<ul>
+					<li><a href="FancyAnimals.html">Home</a></li> |
+					<li ><a href="animalList.html">Lists</a></li> |
+					<li ><a href="article.html">Articles</a></li>					
+				</ul>
+			</nav>		
+		</div>
+
+        <div id="main">
+            <div class="text-box">
+                <h1>Website Feedback</h1>
+                <br>
+                <p>Please use the form below to raise any issues you experienced or your comments on how should we improve our site. 
+                    We will read your concern carefully.</p>
+            </div>
+
+            <div class="form-box">            
+                <form action=" " method="get" name="form" >
+                    <h4>I Have Feedback on: </h4>
+                    <div class="input-box">
+                        <select name="feedback type" multiple size="3">
+                        <option value="issue" checked> Select Feedback Category:</option>
+                        <option value="issue"> Website Problems</option>
+                        <option value="issue"> Content Issues</option>
+                        <option value="issue"> Website Interface Problems</option>
+                        </select>
+                    </div>
+                    <h4>What problem are you facing with? <span>*Required Field</span></h4>
+                    <div class="input-box">
+                        <textarea name="problem-statement" rows="3" cols="100">Describe the problem in details</textarea>                        
+                    </div>
+                    <h4>You may attach a screenshot on the problem.</h4>
+                    <div class="input-box">
+                        <input type="file" name="problem-screenshot">
+                    </div>
+                    <h4>Your suggestion on solving the problem </h4>
+                    <div class="input-box">
+                        <textarea name="problem-solution" rows="3" cols="100"></textarea>
+                    </div>
+                    <h4>Is there anything else you think we should know? </h4>
+                    <div class="input-box">
+                        <textarea name="additional-remark" rows="3" cols="100"></textarea>
+                    </div>
+                </form>
+
+                    <div class="credential">
+                        <h4>We might want to collect some information about you for record purpose.</h4>
+                        <table style="border-spacing:12px;">
+                        <form action=" " method="get/post" name="form1" onsubmit="return required()">
+                            <h4><span>*Required Fields</span></h4>
+                            <tr><td>Name</td><td>
+                                <input type="text" name="UserName"></td></tr>                                
+                            <tr><td>Gender</td><td> 
+                                <input type="radio" name="Gender">Female
+                                <input type="radio" name="Gender">Male</td></tr>
+                            <tr><td>Email</td><td>
+                                <input type="email" name="email"></td></tr>
+                            <tr><td colspan="2">
+                             <input class="button" type="submit" value="Submit" name="submit"></td></tr>                                              
+                        </form>
+                        </table>
+                    </div>           
+            </div>            
+        </div>    
+        <script> /*to check empty field on name & email*/
+            function required() {
+                var errormessage="";                
+                if (document.form1.UserName.value == ""){
+                    errormessage += "Enter your Name \n";
+                    document.form1.UserName.style.borderColor="red";
+                }
+                if (document.form1.email.value == ""){
+                    errormessage += "Enter your Email ! \n";
+                    document.form1.email.style.borderColor="red";
+                }
+                if (errormessage != ""){
+                    window.alert(errormessage);
+                    return false;                
+                }
+                else{
+                    window.alert('Submission Successful! Thank You for Visiting Our Website.');
+                    return true;
+                }
+            } 
+		</script>
+
+        <div class="our-video">
+            <h2 style="color: #7f572f;font-family:rockwell;">Life in a Snapshot: Our Self-Biography</h2>
+            <iframe src="Our Biography.mp4" type="type/mp4" width="700" height="400" controls>
+                Your browser does not support the video tag.
+            </iframe>
+        </div>
+
+        <div id="footer">
+			<footer>
+				<div class="footer-note">
+					<h1>Thank You for Visiting our Website !</h1>
+				</div>
+				<h3> &copy;2023 H.Y.Wong | P.L.Yew | H.Z.Lee</h3>
+			</footer>			
+		</div>
+    </body>
+</html>

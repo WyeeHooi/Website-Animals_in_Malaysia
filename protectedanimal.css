@@ -1,0 +1,49 @@
+
+.animalprotect{
+    width: 95%;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+.animalprotect ul{
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.animalprotect ul li{
+    list-style: none;
+    height: 100%;
+    padding-right: 20px;
+
+}
+.animalprotect ul li img{
+    position: relative;
+    width: 240px;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+
+}
+.animalprotect ul li p{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: absolute;
+    top: 70%;
+    left: auto;
+    z-index: 1;
+    height: 20%;
+    width: 100%;
+    color: white;          
+}
+.animalprotect ul li p span{
+    background: linear-gradient(to top,#222,transparent);    
+    width: 100%;
+}

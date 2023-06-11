@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--copy-->
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Fancy Animals | Mammals</title>
+		<link rel = "icon" href = "images/logo icon.png" type = "image/icon">
+		<link rel="stylesheet" href="css-header-navi-footer.css">
+		<!--copy till here-->
+        <link rel="stylesheet" href="animaldetails.css">
+        <script type="text/javascript" src="https://www.amcharts.com/lib/3/ammap.js"></script>
+        <script type="text/javascript" src="https://www.amcharts.com/lib/3/maps/js/malaysiaLow.js"></script>
+    </head>
+    <body>
+        <!--copy-->
+        <div id="header">
+            <header>
+                <a href="FancyAnimals.html"><img src="images/header.png" alt="Fancy Animals logo" style="max-width:100%"></a>
+            </header>			
+        </div>
+        
+        <div id="nav">
+            <nav>
+				<ul>
+					<li><a href="FancyAnimals.html">Home</a></li> |
+					<li style="color:white"><a href="animalList.html">Lists</a></li> |
+					<li ><a href="article.html">Articles</a></li>					
+				</ul>
+			</nav>		
+		</div>
+        <!--until here-->
+        <main>
+            <h1>Malayan Tiger</h1>
+                <div class="imagebox">
+                    <img src="https://apicms.thestar.com.my/uploads/images/2020/10/19/904868.jpg" 
+                    alt="Picture of Malayan Tiger" style="float: left"/>
+                    <div class="date-word">
+                        Updated On: 20 OCT 2020
+                    </div>
+                    <div class="copyright-word">
+                        &copy;Sim Leoi Leoi | thestar.com.my
+                    </div>
+                    <audio controls>
+                        <source src="tigerAudio.wav" type="audio/wav">                        
+                      Your browser does not support the audio element.
+                    </audio>
+                    
+                </div>
+                <div class="theory" >
+                    <iframe src="https://www.youtube.com/embed/poQLDSsStr8" title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    Your browser does not support the video tag.
+                    </iframe>
+                </div>
+                
+                <div class="box">
+                    <div class="description1">
+                        <h2 style="color:#5d6c39;font-weight: bold;font-size: 2.5vw;text-shadow: 0.05em 0.05em #96979477;	">Characteristics</h2>
+                        <p><b>Scientific name: </b>Panthera Tigris Jacksoni</p>
+                        <p><b>Habitats: </b>Tropical and subtropical forest, shrubland, grassland</p>
+                        <p><b>Favourite foods: </b>Meat</p>
+                        <p><b>Predator: </b>Humans</p>
+                        <p><b>Fun fact: </b>This tiger enjoys swimming and playing in shallow rivers and lakes, and it can cross shallow streams by
+                            swimming while keeping its head above water.</p>
+                        <p><b>Lifespan: </b>18 - 25 years</p>
+                    </div>
+                    <div class="description2">
+                        <br><br><br>
+                        <p><b>Weight: </b>Around 99 to 117 kg</p>
+                        <p><b>Distribution location in Malaysia: </b>Kelantan, Terengganu, Pahang, and Johor</p>
+                        <p><b>Which Zoo have? </b>Johor Zoo, Zoo Negara in Kuala Lumpur, and Zoo Taiping</p>
+                    </div>                 
+                </div>
+                <h2 style="color:#5d6c39;font-weight: bold;font-size: 2.5vw;text-shadow: 0.05em 0.05em #96979477;margin-top: 10%;">Distribution Area</h2>
+                <div id="map"><script type="text/javascript" src="malayanTiger.js"></script></div>
+                <div class="button-box">
+                    <button class="button" id="btn1" style="float: left" ><em>&lt; Previous</em> <span style="padding-left: 10%;">
+                        Malayan Tapir</span></button>
+                </div>
+            </main>
+            
+            <script>
+            btn1.onclick=function(){
+                location.href='tapir.html'
+            }
+            </script>
+        
+        <footer>
+            <div class="footer-note">
+                <h1>Share Us Your Thoughts !</h1></div>
+                <div class="feedback"><a href="Feedback-form.html" target="_blank"><button>Feedback</button></a></div>
+                <div class="copyright"><h3> &copy;2023 H.Y.Wong | P.L.Yew | H.Z.Lee</h3></div>
+        </footer>
+    </body>
+</html>
+
