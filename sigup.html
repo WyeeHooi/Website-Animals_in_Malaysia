@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <link rel="stylesheet" href="login_sigup_interface.css">
+
+<body>
+    
+    <div id="form">
+        <h1>Sign Up</h1>
+
+        <form action="SignUp.php" method="post" novalidate>
+            <div>
+                <label for="name">Username</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="password_confirm">Repeat Password</label>
+                <input type="password" id="password_confirm" name="password_confirm">
+            </div>
+            <button>Submit</button>
+        </form>
+        <a href="Login.php"><button>Log In</button></a>
+    </div>
+    
+
+</body>
+
+</html>

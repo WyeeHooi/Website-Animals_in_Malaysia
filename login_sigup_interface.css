@@ -1,0 +1,28 @@
+body {
+    /* Background image with transparency */
+    background-image: url('images/landing_elephant.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    position: relative; /* Required for positioning ::before pseudo-element */
+    display: flex;
+    height: 90vh;
+}
+
+
+
+/* Style for the form container div */
+div#form {
+    width: 40%;    
+    text-align: left;         
+    padding-left: 60px;   
+    padding-bottom: 20px; 
+    background-color: rgba(171,194,111, 0.9);    
+    align-items: center;
+    position: relative; /* Set the position to absolute */
+    left: 80%; /* Adjust the value to position the div on the right */
+    height:fit-content;
+    border-radius: 10px;    
+}
+
+
